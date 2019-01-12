@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive 3D Room</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/room.css" type="text/css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-end align-items-center px-0 px-md-5 w-100" id="paints">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-4">
+                <p class="text-center floating">Select the color and surface</p>
+                <div class="row mb-4">
+                    <div class="col-12 col-md-4">
+                        <button class="btn part-selector w-100 mt-3" id="wall-1">Side wall</button>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <button class="btn part-selector w-100 active mt-3" id="wall-2">Back wall</button>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <button class="btn part-selector w-100 mt-3" id="floor">Floor</button>
+                    </div>
+                </div>
+                <div class="row text-white text-center text-uppercase">
+                    <div class="col-4 col-sm-3 mb-4">
+                        <div class="palette-item p-4" style="background-color: #DD4132">1</div>
+                    </div>
+                    <div class="col-4 col-sm-3 mb-4">
+                        <div class="palette-item p-4" style="background-color: #9E1030">2</div>
+                    </div>
+                    <div class="col-4 col-sm-3 mb-4">
+                        <div class="palette-item p-4" style="background-color: #FE840E">3</div>
+                    </div>
+                    <div class="col-4 col-sm-3 mb-4">
+                        <div class="palette-item p-4" style="background-color: #FF6F61">4</div>
+                    </div>
+                    <div class="col-4 col-sm-3 mb-4">
+                        <div class="palette-item p-4" style="background-color: #C62168">5</div>
+                    </div>
+                    <div class="col-4 col-sm-3 mb-4">
+                        <div class="palette-item p-4" style="background-color: #8D9440">6</div>
+                    </div>
+                    <div class="col-4 col-sm-3 mb-4">
+                        <div class="palette-item p-4" style="background-color: #FFD662">7</div>
+                    </div>
+                    <div class="col-4 col-sm-3 mb-4">
+                        <div class="palette-item p-4" style="background-color: #00539C">8</div>
+                    </div>
+                    <div class="col-4 col-sm-3 mb-4">
+                        <div class="palette-item p-4" style="background-color: #755139">9</div>
+                    </div>
+                    <div class="col-4 col-sm-3 mb-4">
+                        <div class="palette-item p-4" style="background-color: #D69C2F">10</div>
+                    </div>
+                    <div class="col-4 col-sm-3 mb-4">
+                        <div class="palette-item p-4" style="background-color: #616247">11</div>
+                    </div>
+                    <div class="col-4 col-sm-3 mb-4">
+                        <div class="palette-item p-4" style="background-color: #E8B5CE">12</div>
+                    </div>
+                    <div class="col-4 col-sm-3 mb-4">
+                        <div class="palette-item p-4" style="background-color: #D2C29D">13</div>
+                    </div>
+                    <div class="col-4 col-sm-3 mb-4">
+                        <div class="palette-item p-4" style="background-color: #343148">14</div>
+                    </div>
+                    <div class="col-4 col-sm-3 mb-4 text-dark">
+                        <div class="palette-item p-4" style="background-color: #F0EAD6">15</div>
+                    </div>
+                    <div class="col-4 col-sm-3 mb-4">
+                        <div class="palette-item p-4" style="background-color: #615550">16</div>
+                    </div>
+                </div>
+                <button class="btn part-selector w-100" id="reset-colors">Clear colors</button>
+            </div>
+        </div>
+    </div>
+    <div id="viewport">
+        <div class="room">
+            <div class="floor"></div>
+            <div class="wall-1"></div>
+            <div class="wall-2" id="backwall"></div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/room.js"></script>
+</html>
