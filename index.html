@@ -2,9 +2,11 @@
 <html>
 <head>
     <title>Responsive 3D Room</title>
+    <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/room.css" type="text/css">
 </head>
@@ -13,6 +15,7 @@
         <div class="row d-flex justify-content-end align-items-center px-0 px-md-5 w-100" id="paints">
             <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-4">
                 <p class="text-center floating">Select the color and surface</p>
+                <!-- Surface selector -->
                 <div class="row mb-4">
                     <div class="col-12 col-md-4">
                         <button class="btn part-selector w-100 mt-3" id="wall-1">Side wall</button>
@@ -24,6 +27,7 @@
                         <button class="btn part-selector w-100 mt-3" id="floor">Floor</button>
                     </div>
                 </div>
+                <!-- Color palette -->
                 <div class="row text-white text-center text-uppercase">
                     <div class="col-4 col-sm-3 mb-4">
                         <div class="palette-item p-4" style="background-color: #DD4132">1</div>
@@ -73,11 +77,13 @@
                     <div class="col-4 col-sm-3 mb-4">
                         <div class="palette-item p-4" style="background-color: #615550">16</div>
                     </div>
+                    <!-- Add new colors here -->
                 </div>
                 <button class="btn part-selector w-100" id="reset-colors">Clear colors</button>
             </div>
         </div>
     </div>
+    <!-- Room -->
     <div id="viewport">
         <div class="room">
             <div class="floor"></div>
@@ -86,6 +92,7 @@
         </div>
     </div>
 </body>
+<!-- Javascript -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
