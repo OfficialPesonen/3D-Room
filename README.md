@@ -16,7 +16,7 @@ The system takes the color from `.palette-item` 's background color so adding ne
 Change the background color to your color and you are done.
 ```html
 <div class="col-4 col-sm-3 mb-4">
-	<div class="palette-item p-4" style="background-color: #DD4132">1</div>
+    <div class="palette-item p-4" style="background-color: #DD4132">1</div>
 </div>
 ```
 
@@ -24,6 +24,6 @@ Change the background color to your color and you are done.
 Find the line where the list of colors start (~line 27) and just add this piece of html bottom of the list (~line 77).
 ```html
 <div class="col-4 col-sm-3 mb-4">
-	<div class="palette-item p-4" style="background-color: #DD4132">1</div>
+    <div class="palette-item p-4" style="background-color: #DD4132">1</div>
 </div>
 ```
